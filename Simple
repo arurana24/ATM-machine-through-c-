@@ -1,0 +1,47 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    cout<<"WELCOME TO SBI ATM";
+     int account;
+    cout << "Choose Account:\n";
+    cout << "1. Using SAVINGS ACCOUNT\n" ;
+    cout << "2. Using CURRENT ACCOUNT\n";
+    cout << "Enter your choice (1 or 2): ";
+    cin >> account;
+    
+    switch(account)
+    {
+        case 1:cout<<"ENTER THE PIN:";
+                int a;
+                cin>>a;
+                if(a==0000)
+                {   cout<<"YOUR CURRENT BALANCE IS Rs.80000\n";
+                    cout<<"WITHDRAWL AMOUNT:";
+                    int b;
+                    cin>>b;
+                    int e=80000-b;
+                    cout<<"AVAILABLE BALANCE IS Rs."<<e<<endl;
+                    cout<<"THANKS FOR CHOSING SBI";
+                }
+                else
+                {cout<<"INVALID ";}
+         break;
+     case 2:cout<<"ENTER THE PIN:";
+                int c;
+                cin>>c;
+                if(c==0000)
+                {   cout<<"YOUR CURRENT BALANCE IS Rs.80000\n";
+                    cout<<"WITHDRAWL AMOUNT:";
+                    int d;
+                    cin>>d;
+                    int f=80000-d;
+                    cout<<"AVAILABLE BALANCE IS Rs."<<f<<endl;
+                    cout<<"THANKS FOR CHOSING SBI";
+                }
+                else
+                {cout<<"INVALID ";}
+         break;
+    }
+    
+}
