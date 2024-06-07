@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    cout<<"WELCOME TO SBI ATM";
+    cout<<"WELCOME TO SBI ATM"<<endl;
      int account;
     cout << "Choose Account:\n";
     cout << "1. Using SAVINGS ACCOUNT\n" ;
