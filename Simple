@@ -42,7 +42,7 @@ int main()
                 else
                 {cout<<"INVALID ";}
          break;
-    default:cout<<"ENTER A VALID ACCOUNT"<<endl<<"FOR NOW TRANSACTION IS BEING TERMINATED"<<endl<<"TRY AGAIN LATER!!";
+   default:cout<<"ENTER A VALID ACCOUNT"<<endl<<"FOR NOW TRANSACTION IS BEING TERMINATED"<<endl<<"TRY AGAIN LATER!!";
     
     }
     
