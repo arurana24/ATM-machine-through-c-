@@ -1,0 +1,117 @@
+#include <iostream>
+using namespace std;
+ class amount
+ {
+     public:
+    int saving;
+    int current;
+ };
+
+class PIN
+{
+  protected:
+  int p1;
+};
+class pass:public PIN
+{
+    public:
+    void s1(int id)
+    {
+        p1=id;
+    }
+    int code
+    {
+        p1
+    };
+    void change_code()
+    {
+    cout<<"ENTER THE CURRENT PIN:";
+            int f;
+            cin>>f;
+            if(f==p1)
+            {
+                cout<<"IF YOU ARE'NT SURE TO CHANGE THE PIN THEN CANCEL ELSE CARRY ON"<<endl;
+                cout<<"ENTER THE NEW PIN:";
+                int g;
+                cin>>g;
+                int j=p1;
+                p1=g;
+                cout<<"YOU'RE NEW CODE IS:"<<p1<<endl;
+            }
+           else
+           {
+               cout<<"INVALID OLD PIN";
+           }
+    }      
+    
+    
+};
+
+
+int main()
+{
+   pass a;
+    
+    a.s1(0000);
+    // a.change_code();
+    // return 0;
+  amount s;
+  s.saving=180000;
+  s.current=170000;
+    
+    
+    
+      cout<<"WELCOME TO SBI ATM"<<endl;
+  int account;
+  cout<<"Choose Account:\n";
+  cout<<"1.Using SAVINGS ACCOUNT\n";
+  cout<<"2.Using CURRENT ACCOUNT\n";
+  cout<<"3.Change your ATM PIN\n";
+  cout<<"Enter your choice(1, 2 or 3):";
+  cin>>account;
+  
+  switch(account)
+  {
+      case 1:cout<<"ENTER THE PIN:";
+            int b;
+            cin>>b;
+            if (b==a.code)
+            {
+                cout<<"YOUR CURRENT BALANCE IS Rs."<<s.saving<<endl;
+                cout<<"WITHDRAWL AMOUNT:";
+                int c;
+                cin>>c;
+                int e=s.saving-c;
+                cout<<"AVAILABLE BALANCE IS Rs."<<e<<endl;
+                cout<<"THANKS FOR CHOSING SBI";
+            }
+            else
+            {
+                cout<<"INVALID";
+            }
+            break;
+            
+            case 2:cout<<"ENTER THE PIN:";
+            int d;
+            cin>>d;
+            if (d==a.code)
+            {
+                cout<<"YOUR CURRENT BALANCE IS Rs."<<s.current<<endl;
+                cout<<"WITHDRAWL AMOUNT:";
+                int c;
+                cin>>c;
+                int e=s.current-c;
+                cout<<"AVAILABLE BALANCE IS Rs."<<e<<endl;
+                cout<<"THANKS FOR CHOSING SBI";
+            }
+            else
+            {
+                cout<<"INVALID";
+            }
+            break;
+            case 3:a.change_code();
+            break;
+            default:cout<<"ENTER VALID CHOICE";
+  }
+    return 0;
+}
