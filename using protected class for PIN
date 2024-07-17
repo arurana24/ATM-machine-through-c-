@@ -53,15 +53,10 @@ int main()
    pass a;
     
     a.s1(0000);
-    // a.change_code();
-    // return 0;
   amount s;
   s.saving=180000;
-  s.current=170000;
-    
-    
-    
-      cout<<"WELCOME TO SBI ATM"<<endl;
+  s.current=170000;  
+  cout<<"WELCOME TO SBI ATM"<<endl;
   int account;
   cout<<"Choose Account:\n";
   cout<<"1.Using SAVINGS ACCOUNT\n";
