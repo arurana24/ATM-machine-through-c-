@@ -43,15 +43,15 @@ class pass:public PIN
                cout<<"INVALID OLD PIN";
            }
     }      
-    
-    
+
+
 };
 
 
 int main()
 {
    pass a;
-    
+
     a.s1(0000);
   amount s;
   s.saving=180000;
@@ -64,7 +64,7 @@ int main()
   cout<<"3.Change your ATM PIN\n";
   cout<<"Enter your choice(1, 2 or 3):";
   cin>>account;
-  
+
   switch(account)
   {
       case 1:cout<<"ENTER THE PIN:";
@@ -76,16 +76,23 @@ int main()
                 cout<<"WITHDRAWL AMOUNT:";
                 int c;
                 cin>>c;
+                if(c<=s.saving)
+                {
                 int e=s.saving-c;
                 cout<<"AVAILABLE BALANCE IS Rs."<<e<<endl;
                 cout<<"THANKS FOR CHOSING SBI";
+                }
+                else
+                {
+                    cout<<"The Amount "<<c<<" exceeds the limit";
+                }
             }
             else
             {
                 cout<<"INVALID";
             }
             break;
-            
+
             case 2:cout<<"ENTER THE PIN:";
             int d;
             cin>>d;
@@ -95,9 +102,17 @@ int main()
                 cout<<"WITHDRAWL AMOUNT:";
                 int c;
                 cin>>c;
+                if(c<=s.current)
+                {
                 int e=s.current-c;
                 cout<<"AVAILABLE BALANCE IS Rs."<<e<<endl;
                 cout<<"THANKS FOR CHOSING SBI";
+                }
+                else
+                {
+                    cout<<"The Amount"<<c<<"exceeds the limit";
+    
+                }
             }
             else
             {
